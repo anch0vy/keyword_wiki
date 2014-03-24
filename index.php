@@ -10,4 +10,5 @@ for($n=1;$n<$count+1;$n++)
 	$row=mysql_fetch_array($result);
 	echo "<a href=read.php?id=".$row['id'].">".$row['title']."</a><br>";
 }
+echo "<a href=keyword_insert.html>키워드 추가</a>"
 ?>

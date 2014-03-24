@@ -11,6 +11,9 @@ echo '유용한 링크<br>';
 $link=explode(",",$row['link']);
 foreach($link as $l)
 {
-	echo "<a href=".$l." target=\"_blank\">"."여기가 타이틀 나올 부분"."</a><br>";
+	echo "<a href=".$l." target=\"_blank\">".$l."</a><br>";
+	#저기서 나올건 타이틀
 }
+echo "<a href=edit.html?id=".$id.">수정하기</a><br>";
+echo "<a href=history.php?id=".$id.">수정내역</a>";
 ?>

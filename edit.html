@@ -1,0 +1,33 @@
+<?php
+require('./setting.php');
+require('./db_conn.php');
+$id=$_GET['id'];
+$q="SELECT * FROM keyword_history WHERE id=$id;";
+$result=mysql_query($q,$db);
+$row=mysql_fetch_array($result);
+$title=$row['title'];
+$synonyms=$row['synonyms'];
+$link=$row['link'];
+?>
+<html>
+<head>
+  <form method="get" action="./edit.php" class="signup">
+  <input type="hidden" value="<?php echo $id;?>" name="id" >
+    <p>
+      <label for="title">keyword(Title):</label>
+      <input type="text" value="<?php echo $title;?>" name="title">
+    </p>
+    <p>
+      <label for="synonyms">synonyms:</label>
+      <input type="text" value="<?php echo $synonyms;?>" name="synonyms">
+    </p>
+    <p>
+      <label for="link">link for keyword:</label>
+      <input type="text" value="<?php echo $link;?>" name="link">
+    </p>
+    <p>
+      <button type="submit">에딧!</button>
+    </p>
+  </form>
+</head>
+</html>

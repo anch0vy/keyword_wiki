@@ -3,12 +3,3 @@
 
 #예제 사이트
 [http://keyword.ctfagain.kr](http://keyword.ctfagain.kr)
-
-#TODO list
-1. 동음어 저장
-1. 키워드끼리 관계저장
-1. 하위 상위 관계 저장
-1. 추천 링크
-1. 검색어링크 걸기 구글
-1. 역링크
-1. 키워드 추천 기능
